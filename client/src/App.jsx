@@ -6,6 +6,7 @@ import Newpost from "./pages/Newpost";
 import Editpost from "./pages/Editpost";
 import PostDetail from "./pages/PostDetail";
 import About from "./pages/About";
+import PageNotFound from "./pages/PageNotfound";
 import { ToastContainer, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/edit-post/:id" element={<Editpost />} />
         <Route path="/about" element={<About />} />
         <Route path="/post/:id" element={<PostDetail />} />
+        <Route path="/pagenotfound" element={<PageNotFound/>} />
       </Routes>
       <ToastContainer
         position="bottom-center"
